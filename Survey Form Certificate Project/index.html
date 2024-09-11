@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spa Satisfaction Survery</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <main>
+                <h1 id="title">Arcana Wellness Retreat</h1>
+                <p id="description"><strong>Thank you for choosing Arcana Wellness.</strong></p>
+                <img src="https://images.pexels.com/photos/6621181/pexels-photo-6621181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="flower blooming" width=500px height=500px />
+
+                <!-- ***This is the beginning of the survey form and it asks for the users: Full name, email address, and age category -->
+                <form id="survey-form">
+                        <strong>Kindly share your recent spa experience with us!</strong>
+
+
+                        <fieldset>
+                                <label id="name-label">Enter your full name: <input id="name" name="name" class="name"
+                                                type="text" placeholder="e.g Jane Doe" required /></label>
+                                <br />
+                                <label id="email-label">Enter your email: <input id="email" name="email" class="email"
+                                                type="email" placeholder="wellness@gmail.com" required /></label>
+                                <br />
+                                <label id="number-label">Enter your phone number: <input id="number" name="number"
+                                                class="number" type="number" min="10" max="10"
+                                                placeholder="(xxx)-xxx-xxxx" required /></label>
+                                <br />
+                                <label id="age-label" class="age">Select your age category
+                                        <select id="dropdown">
+                                                <option>(select)</option>
+                                                <option>20-29</option>
+                                                <option>30-39</option>
+                                                <option>40-49</option>
+                                                <option>50-59</option>
+                                                <option>60+</option>
+                                        </select>
+
+                                        <!-- ***This section asks the customer what services they receieved.
+Create inputs with the attribute of checkboxes so the user can select multiple services.-->
+                                        <br />
+                                        <br />
+
+                                        <div>Kindly indicate the service(s) you have received.</div>
+
+                                        <label><input id="massage-therapy" name="service" class="massage-therapy"
+                                                        type="checkbox" value="massage-therapy" /> Massage
+                                                Therapy</label>
+                                        <br />
+                                        <label><input id="facial-massage" name="service" class="facial-massage"
+                                                        type="checkbox" value="facial-massage" /> Facial Massage</label>
+                                        <br />
+                                        <label><input id="hydrotherapy" name="service" class="hydrotherapy"
+                                                        type="checkbox" value="hydrotherapy" /> Colon
+                                                Hydrotherapy</label>
+                                        <br />
+                                        <label><input id="sound-bath" name="service" class="sound-bath" type="checkbox"
+                                                        value="sound-bath" /> Sound Bath Healing</label>
+                                        <br />
+                                        <label><input id="reiki" name="service" class="reiki" type="checkbox"
+                                                        value="reiki" /> Reiki Session</label>
+
+                                        <br />
+                                        <br />
+
+                                        <!-- ***Create 5 radio buttons so the customer can rate their experience: Poor, Fair, Good, Very Good, Excellent! -->
+                                        <div>Overall, how would you rate your wellness spa experience?</div>
+                                        <label for="poor-rating"><input id="poor-rating" name="spa-experience"
+                                                        type="radio" value="poor-rating" />Poor☹️</label>
+                                        <label for="fair-rating"><input id="fair-rating" name="spa-experience"
+                                                        type="radio" value="fair-rating" />Fair🙂</label>
+                                        <label for="good-rating"><input id="good-rating" name="spa-experience"
+                                                        type="radio" value="good-rating" />Good😊</label>
+                                        <label for="verygood-rating"><input id="verygood-rating" name="spa-experience"
+                                                        type="radio" value="verygood-rating" />Very Good😄</label>
+                                        <label for="excellent-rating"><input id="excellent-rating" name="spa-experience"
+                                                        type="radio" value="excellent-rating" />Excellent🤩</label>
+
+                                        <br />
+                                        <br />
+
+                                        <label>Overall, how would you rate our customer service?</label>
+                                        <br />
+                                        <label for="poor-service"><input id="poor-service" name="customer-service"
+                                                        type="radio" value="poor-service" />Poor☹️</label>
+                                        <label for="fair-service"><input id="fair-service" name="customer-service"
+                                                        type="radio" value="fair-service" />Fair🙂</label>
+                                        <label for="good-service"><input id="good-service" name="customer-service"
+                                                        type="radio" value="good-service" />Good😊</label>
+                                        <label for="verygood-service"><input id="verygood-service"
+                                                        name="customer-service" type="radio"
+                                                        value="verygood-service" />Very Good😄</label>
+                                        <label for="excellent-service"><input id="excellent-service"
+                                                        name="customer-service" type="radio"
+                                                        value="excellent-service" />Excellent🤩</label>
+
+                                        <!-- ***Create two checkboxes so the customer can opt-in for occasional SMS text and Emails -->
+                                        <br />
+                                        <br />
+
+                                        How do you think we could improve our services or products to better meet your
+                                        needs?
+                                        <br />
+                                        <textarea>Your feeback is invaluable. . .</textarea>
+                                        <br />
+
+                                        <!-- Create a submit button with an id of "submit" -->
+                                        <button id="submit">Submit</button>
+
+                </form>
+
+
+        </main>
+</body>
+
+</html>
+<!-- <div class="promo">Would you be interested in opting in to receive occasional promotional offers?</div>
+    </fieldset> -->
